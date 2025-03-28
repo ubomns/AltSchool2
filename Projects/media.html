@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="index.html">Home</a>
+    <a href="table.html">Table</a>
+    <a href="media.html">Media</a>
+    <br/>
+    <p>Image</p>
+    <picture>
+        <!-- Image for large screens (laptop) -->
+        <source srcset="Media/profile_image.jpg" media="(min-width: 1024px)">
+        
+        <!-- Image for tablets -->
+        <source srcset="Media/profile_image.jpg" media="(min-width: 768px)">
+        
+        <!-- Image for mobile devices -->
+        <source srcset="Media/profile_image.jpg" media="(max-width: 767px)">
+        
+        <!-- Default fallback image -->
+        <img src="Media/profile_image.jpg" alt="Responsive Image">
+    </picture>
+    
+    <p>Audio</p>
+    <audio controls>
+        <source src="Media/personal_statement.mp3" type="audio/mp3">
+    </audio>
+
+    <p>Video</p>
+    <video controls>
+        <source src="Media/my_video.mp4" type="video/mp4">
+    </video>
+</body>
+</html>
